@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surfn' Waves</title>
+    <link rel="icon" type="image/x-icon" href="wave-favicon.png">
+    <meta name="description" content="Website about surfing">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+          href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:ital,wght@0,400;1,400;1,700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <script>window.addEventListener("DOMContentLoaded", () => {
+        document.querySelector(".menu-icon").addEventListener("click", () => {
+          document.querySelector(".main-menu").classList.toggle("menu-show");
+        });
+      });
+      </script>
+</head>
+
+<body>
+    <div class="hero">
+        <div class="video-background">
+          <div class="video-foreground">
+            <iframe width="1600" height="900" src="https://www.youtube.com/embed/oANeSfTDaoo?playlist=oANeSfTDaoo&controls=0&autoplay=1&mute=1" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="hero-text">
+          <h1>Surfing World</h1>
+          <p>*change later</p>
+        </div>
+      </div>
+
+    <!--
+<div class="hero">
+    <picture>
+        <source srcset="images/surf-heroimage-1600.jpg" media="(min-width: 901px)">
+        <source srcset="images/surf-heroimage-900.jpg" media="(min-width: 501px)">
+        <source srcset="images/surf-heroimage-500.jpg" media="(max-width: 500px)">
+        
+        <img src="images/surf-heroimage-1600.jpg" alt="surfers walking across the beach">
+    </picture>
+    <div class="overlay">       
+        <h1>Example</h1>
+        <p>best ever</p>
+    </div>
+    </div>
+    -->
+    <div class="main-menu">
+        <div class="menu-icon">
+          <svg viewbox="0 0 60 60" width="60px" height="60px">
+            <line x1="5%" y1="50%" x2="95%" y2="50%" />
+            <line x1="5%" y1="50%" x2="95%" y2="50%" />
+          </svg>
+        </div>
+
+        <nav>
+            <ul>
+                <li>
+                    <a>Home</a>
+                </li>
+                <li>
+                    <a href="about/">About</a>
+                </li>
+                <li>
+                    <a href="form/">Form</a>
+                </li>
+            </ul>
+    
+        </nav>
+    </div>
+   
+    
+    <main>
+        <article class="pannel">
+            <div class="text-wraper left">
+                <h2>New Port Beach</h2>
+                <p>New Port Beach is home to "The Wedge" and iconic surf shops and restaurants.
+                This is a great spot because it is easy to access and the waves are generaly calm.</p>
+                <p><strong>The best Surf shops in the area are ranked below:</strong></p>
+                <ol>
+                    <li>Jack's Surf Shop</li>
+                        <ul>
+                            <li>There are two locations in Newport</li>
+                            <li>Often have the best deals</li>
+                        </ul>
+                    <li>Pj's Surf Shop</li>
+                    <li>Bilabong Surf shop</li>
+                        <ul>
+                            <li>
+                                <a href="https://www.billabong.com/" target="_blank">Billabong Website</a>
+                            </li>
+                        </ul>
+                </ol>
+                <a class="button">Click Here</a>
+            </div>
+            <div class="image-wraper"><img src="images/wedge-pic-2.jpg" alt="painting of the wedge"></div>
+
+        </article>
+        
+        <article class="pannel">
+            <div class= "text-wraper" >
+                <h2>Sunset Beach</h2>
+                <p>Sunset Beach is located on the north shore of Oahu in Hawaii. These waves are often bigger here
+                    and<em> not recomended for those with out experience.</em></p>
+                    <p><strong>Intresting facts about this beach:</strong></p>
+                    <a class="button">Buy Here</a>
+            </div>
+            <div class="image-wraper left"> <img src="images/new-card2.jpg" alt="surfer"></div>
+
+        </article>
+
+        
+
+    </main>
+
+    <aside>
+        <h4>Best times to surf</h4>
+        <p>A general rule of thumb is that california has better surfing during the spring and summer months 
+            while hawaii has much better waves during the fall and winter. The swells and changes in seasons often 
+            contribute to this.
+        </p>
+    </aside>
+
+<div class="cards">
+    <div class="card">
+        <a>
+            <img src="images/New-card1.jpg" alt="surfer on a wave">
+            <p>California</p>
+        </a>
+    </div>
+    <div class="card">
+        <a>
+            <img src="images/new-card2.jpg" alt="Surfer on a wave">
+            <p>Austalia</p>
+        </a>
+    </div>
+    <div class="card">
+        <a>
+            <img src="images/new-card3.jpg" alt="Surfer on a wave">
+            <p>Indonesia</p>
+        </a>
+    </div>
+    <div class="card">
+        <a>
+            <img src="images/new-card5.jpg" alt="surfer on a wave">
+            <p>Hawaii</p>
+        </a>
+    </div>
+</div>
+<!-- fix the spacing in the footer later-->
+    <footer>
+        
+        <p>Copyright 2022</p>
+    </footer>
+      
+
+
+</body>
+</html

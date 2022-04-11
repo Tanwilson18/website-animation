@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surfn' Waves</title>
+    <link rel="icon" type="image/x-icon" href="../wave-favicon.png">
+    <meta name="description" content="Website about surfing">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+          href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:ital,wght@0,400;1,400;1,700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="../styles/main.css">
+    <script>window.addEventListener("DOMContentLoaded", () => {
+        document.querySelector(".menu-icon").addEventListener("click", () => {
+          document.querySelector(".main-menu").classList.toggle("menu-show");
+        });
+      });
+      </script>
+</head>
+<body class="form">
+    <div class="main-menu">
+        <div class="menu-icon">
+          <svg viewbox="0 0 60 60" width="60px" height="60px">
+            <line x1="5%" y1="50%" x2="95%" y2="50%" />
+            <line x1="5%" y1="50%" x2="95%" y2="50%" />
+          </svg>
+        </div>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <a href="../about/">About</a>
+                </li>
+                <li>
+                    <a>Form</a>
+                </li>
+            </ul>
+    
+        </nav>
+    </div>
+    <h1>Form</h1>
+    <!--
+    <img class="form-svg" src="../images/form.svg" alt="form svg"> 
+        --> 
+    <section>
+    <h2>Request a Demo Surfboard</h2>  
+    <form>
+        <label for="name">Full name</label>
+        <input type="text" name="name" id="name">
+
+        <label for="email">Email address</label>
+        <input type="email" name="email" id="email" required>
+
+        <label for="phone">Phone number</label>
+        <input type="tel" name="phone" id="phone">
+
+        <label for="birthdate">Birthday</label>
+        <input type="date" name="birthdate" id="birthdate">
+
+        <fieldset>
+            <legend>Select your skill level</legend>
+      
+            <input type="radio" id="Pro" name="level" value="Pro">
+            <label for="Pro">Pro</label>
+      
+            <input type="radio" id="experienced" name="level" value="experienced">
+            <label for="experienced">Experienced</label>
+      
+            <input type="radio" id="Intermediate" name="level" value="Intermediate">
+            <label for="Intermediate">Intermediate</label>
+
+      
+            <input type="radio" id="beginner" name="level" value="beginner">
+            <label for="beginner">Beginner</label>
+        
+      
+            <legend>Select your favorite surfing brands (check all that apply)</legend>
+      
+            <input type="checkbox" name="brands" id="rvca" value="rvca">
+            <label for="rvca">RVCA</label>
+      
+            <input type="checkbox" name="brands" id="Hurley" value="Hurley">
+            <label for="Hurley">Hurley</label>
+      
+            <input type="checkbox" name="brands" id="O'neil" value="O'neil">
+            <label for="O'neil">O'neill</label>
+      
+            <input type="checkbox" name="brands" id="Vissla" value="Vissla">
+            <label for="Vissla">Vissla</label>
+
+            <input type="checkbox" name="brands" id="quicksilver" value="quicksilver">
+            <label for="quicksilver">Quicksilver</label>
+
+            <input type="checkbox" name="brands" id="Billabong" value="Billabong">
+            <label for="Billabong">Billabong</label>
+
+            <input type="checkbox" name="brands" id="Rip Curl" value="Rip Curl">
+            <label for="Rip Curl">Rip Curl</label>
+
+            <input type="checkbox" name="brands" id="other" value="other">
+            <label for="other">Other</label>
+
+          </fieldset>
+      
+          <!-- the placeholder attribute appears when no text is present. For accessibilty reasons, don't use a placeholder instead of a label  -->
+          <label for="extra-info">Questions or comments? Write them below</label>
+          <textarea name="extra-info" id="extra-info" rows="5" placeholder="type here..."></textarea>
+      
+        <a class="button">Sumbit Now</a>
+
+    </form>  
+</section>
+</body>
+</html>
